@@ -35,6 +35,9 @@
     position: absolute;
     right: -200px;
     overflow: hidden;
+    top: 92px;
+    height: 100%;
+    width: 100%;
     opacity: 0;
     transition: 0.4s;
     list-style: none;
