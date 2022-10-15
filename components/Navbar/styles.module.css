@@ -1,72 +1,89 @@
 .header {
+    padding: 0 2rem;
     margin-top: 18px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-  }
-  
-  .navMenu {
+    margin-bottom: 12px;
+}
+
+.navMenu {
     display: none;
-  }
-  
-  .navList {
+}
+
+.navList {
     display: flex;
     list-style: none;
-  }
-  
-  .navMobileShow {
+}
+
+.navMobileShow {
     position: absolute;
-    right: 10px;
+    background-color: #ffffffbf;
+    right: 0px;
+    top: 92px;
+    height: 100%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     list-style: none;
     padding: 0px;
     opacity: 1;
     transition: 0.4s;
-  }
-  
-  .navMobileHidden {
+}
+
+.navMobileHidden {
     position: absolute;
     right: -200px;
     overflow: hidden;
     opacity: 0;
     transition: 0.4s;
     list-style: none;
-  }
-  
-  .navHiddenItem {
-    text-align: left;
+}
+
+.navHiddenItem {
+    margin-top: 8px;
+    text-align: right;
     padding: 12px;
-  }
-  
-  .listItem {
+}
+
+.listItem {
     padding: 12px;
     margin: auto;
     text-align: center;
-  }
-  
-  .bar1, .bar2, .bar3 {
+}
+
+.bar1,
+.bar2,
+.bar3 {
     width: 35px;
     height: 5px;
     background-color: #333;
     margin: 6px 0;
     transition: 0.4s;
-  }
-  
-  .changeBar1 {
-    transform: translate(0, 11px) rotate(-45deg);
-  }
-  .changeBar2 {opacity: 0;}
-  .changeBar3 {
-    transform: translate(0, -11px) rotate(45deg);
-  }
+}
 
-  @media (max-width: 425px) {
+.changeBar1 {
+    transform: translate(0, 11px) rotate(-45deg);
+}
+
+.changeBar2 {
+    opacity: 0;
+}
+
+.changeBar3 {
+    transform: translate(0, -11px) rotate(45deg);
+}
+
+@media (max-width: 425px) {
+    .header {
+        padding: 0 1rem;
+    }
     .navList {
-      display: none;
+        display: none;
     }
+
     .navMenu {
-      display: block;
-      cursor: pointer;
+        display: block;
+        cursor: pointer;
     }
-  }
+}

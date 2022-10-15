@@ -1,12 +1,5 @@
 .container {
   height: 100vh;
-  padding: 0 2rem;
-  overflow: hidden;
+  overflow-x: hidden;
   position: relative;
-}
-
-@media (max-width: 425px) {
-  .container {
-    padding: 0 1rem;
-  }
 }
