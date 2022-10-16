@@ -1,5 +1,6 @@
 
 import Image from 'next/image'
+import Link from 'next/link';
 import { useState } from 'react'
 
 import styles from './styles.module.css'
@@ -14,7 +15,9 @@ export default function Navbar() {
         <nav>
           <ul className={styles.navList}>
             <li className={styles.listItem}>Quem Somos</li>
-            <li className={styles.listItem}>FAQ</li>
+            <li className={styles.listItem}>
+              <Link href="#duvidas"><a>Dúvidas</a></Link>
+            </li>
             <li className={styles.listItem}>Contato</li>
           </ul>
           <div className={styles.navMenu} onClick={() => setToggle(!toggle)}>
@@ -25,9 +28,11 @@ export default function Navbar() {
         </nav>
       </header>
       <ul className={toggle ? styles.navMobileShow : styles.navMobileHidden}>
-        <li className={styles.navHiddenItem} onClick={() => console.log('ok 1')}>Quem Somos</li>
-        <li className={styles.navHiddenItem} onClick={() => console.log('ok 2')}>FAQ</li>
-        <li className={styles.navHiddenItem} onClick={() => console.log('ok 3')}>Contato</li>
+        <li className={styles.navHiddenItem}>Quem Somos</li>
+        <li className={styles.navHiddenItem} onClick={() => setToggle(false)}>
+          <Link href="#duvidas"><a>Dúvidas</a></Link>
+        </li>
+        <li className={styles.navHiddenItem}>Contato</li>
       </ul>
     </>
   )

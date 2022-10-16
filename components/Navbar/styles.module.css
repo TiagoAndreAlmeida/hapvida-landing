@@ -41,6 +41,7 @@
     opacity: 0;
     transition: 0.4s;
     list-style: none;
+    z-index: -100;
 }
 
 .navHiddenItem {
@@ -53,6 +54,7 @@
     padding: 12px;
     margin: auto;
     text-align: center;
+    cursor: pointer;
 }
 
 .bar1,

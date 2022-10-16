@@ -1,0 +1,46 @@
+.container {
+  padding: 0 1rem;
+  background-color: #f6f9fe;
+}
+
+.title {
+  text-align: center;
+  margin-top: 0;
+  padding-top: 12px;
+}
+
+.card {
+  margin: 8px 0;
+  border: 1px solid #76767624;
+  border-radius: 4px;
+}
+
+.header {
+  padding: 6px;
+  background-color: #00000008;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 3px;
+  cursor: pointer;
+  border-bottom: 1px solid #76767624;
+}
+
+.answer {
+  padding: 6px;
+  margin: 0;
+}
+
+@media (min-width: 425px) {
+  .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 15px;
+    align-items: flex-start;
+  }
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 9rem;
+  }
+}
