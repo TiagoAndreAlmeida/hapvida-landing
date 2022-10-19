@@ -14,7 +14,9 @@ export default function Navbar() {
         <Image src={"/images/hapivida-logo.png"} width={153} height={91} />
         <nav>
           <ul className={styles.navList}>
-            <li className={styles.listItem}>Quem Somos</li>
+            <li className={styles.listItem}>
+              <Link href="#planos">Planos</Link>
+            </li>
             <li className={styles.listItem}>
               <Link href="#duvidas"><a>Dúvidas</a></Link>
             </li>
@@ -28,7 +30,9 @@ export default function Navbar() {
         </nav>
       </header>
       <ul className={toggle ? styles.navMobileShow : styles.navMobileHidden}>
-        <li className={styles.navHiddenItem}>Quem Somos</li>
+        <li className={styles.navHiddenItem} onClick={() => setToggle(false)}>
+          <Link href="#planos">Planos</Link>
+        </li>
         <li className={styles.navHiddenItem} onClick={() => setToggle(false)}>
           <Link href="#duvidas"><a>Dúvidas</a></Link>
         </li>

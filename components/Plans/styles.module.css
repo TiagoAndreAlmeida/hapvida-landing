@@ -1,0 +1,27 @@
+.container {
+  padding: 0 1rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.title {
+  text-align: center;
+}
+
+.card {
+  border-radius: 3px;
+  box-shadow: 5px 10px #8888881c;
+  max-width: 320px;
+  padding: 12px;
+  text-align: center;
+  margin: 12px 0;
+}
+
+.button {
+  padding: 12px 60px;
+  background-color: #2862b2;
+  border: none;
+  border-radius: 6px;
+  color: white;
+}
