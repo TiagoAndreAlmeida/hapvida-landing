@@ -1,0 +1,28 @@
+.container {
+    padding: 12px 1rem;
+    text-align: center;
+}
+
+.infors {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.infors > span {
+    margin: 9px;
+}
+
+@media (min-width: 768px) {
+    .infors {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 1024px) {
+    .container {
+        padding: 0 15%;
+    }
+}

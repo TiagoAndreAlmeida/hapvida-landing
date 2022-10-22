@@ -20,7 +20,9 @@ export default function Navbar() {
             <li className={styles.listItem}>
               <Link href="#duvidas"><a>Dúvidas</a></Link>
             </li>
-            <li className={styles.listItem}>Contato</li>
+            <li className={styles.listItem}>
+              <Link href="#contatos"><a>Contato</a></Link>
+            </li>
           </ul>
           <div className={styles.navMenu} onClick={() => setToggle(!toggle)}>
             <div className={`${styles.bar1} ${toggle ? styles.changeBar1 : ''}`}></div>
@@ -36,7 +38,9 @@ export default function Navbar() {
         <li className={styles.navHiddenItem} onClick={() => setToggle(false)}>
           <Link href="#duvidas"><a>Dúvidas</a></Link>
         </li>
-        <li className={styles.navHiddenItem}>Contato</li>
+        <li className={styles.navHiddenItem}>
+          <Link href="#contatos"><a>Contato</a></Link>
+        </li>
       </ul>
     </>
   )
