@@ -41,20 +41,23 @@ export default function Plans() {
     <div id="planos" className={styles.container}>
       <h2 className={styles.title}>Planos</h2>
 
-      {_plans.map((item) => (
-        <div className={styles.card} key={item.id}>
-          <div style={{marginBottom: 20}}>
-            <Image
-              src={item.img}
-              layout="responsive"
-              width={300}
-              height={300} />
+      <div className={styles.plans}>
+        {_plans.map((item) => (
+          <div className={styles.card} key={item.id}>
+            <div style={{ marginBottom: 20 }}>
+              <Image
+                src={item.img}
+                layout="responsive"
+                width={300}
+                height={300} />
+            </div>
+            <span>a parti de R$ {item.value}</span>
+            <h4>{item.title}</h4>
+            <p>{item.desc}</p>
+            <button className={styles.button}>QUERO</button>
           </div>
-          <span>a parti de R$ {item.value}</span>
-          <h4>{item.title}</h4>
-          <p>{item.desc}</p>
-          <button className={styles.button}>QUERO</button>
-        </div>
-      ))}
-    </div>)
+        ))}
+      </div>
+    </div>
+  )
 }
