@@ -6,9 +6,9 @@ export default function Contact() {
     <div id='contatos' className={styles.container}>
       <h2 className={styles.title}>Contatos</h2>
       <div className={styles.infors}>
-        <span><i class="bi bi-whatsapp"></i> (85) 98655-8765</span>
-        <span><i class="bi bi-whatsapp"></i> (85) 98655-8765</span>
-        <span><i class="bi bi-envelope"></i> meuemail@mail.com</span>
+        <span><i className="bi bi-whatsapp"></i> (85) 98655-8765</span>
+        <span><i className="bi bi-whatsapp"></i> (85) 98655-8765</span>
+        <span><i className="bi bi-envelope"></i> meuemail@mail.com</span>
       </div>
 
     </div>
