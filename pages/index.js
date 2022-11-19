@@ -60,12 +60,24 @@ export async function getServerSideProps() {
   } catch (error) {
     console.log(error);
   }
+
+  try {
+    const response = await provider.get("/core/tabela", {
+      params: { 
+        classe: process.env.CLASSE_CONTATOS,
+        inativo: false
+      }
+    });
+    data.contato = response.data;
+  } catch (error) {
+    console.log(error);
+  }
   
   return { props: data }
 }
 
 export default function Home({
-  faq, planos, banner, config
+  faq, planos, banner, config, contato
 }) {
   
   return (<>
@@ -77,7 +89,7 @@ export default function Home({
       <Banner data={banner} config={config} />
       <Plans data={planos} />
       <FAQ data={faq}/>
-      <Contact />
+      <Contact data={contato} />
     </div>
   </>
 
